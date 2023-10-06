@@ -15,7 +15,57 @@
   font-family: "DM Sans", sans-serif;
 }
 body {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
   font-size: 18px;
+}
+img {
+  max-width: 100%;
+}
+/* APP */
+.app {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--Cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero {
+  width: 50%;
+}
+/*  HEADER  */
+.top {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: var(--Softred);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* HEADER TEXT */
+.top .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.top .text h3 {
+  color: var(--Cream);
+  font-size: 18px;
+  font-weight: 400;
+}
+.top .text p {
+  color: var(--Verypaleorange);
+  font-weight: 700;
+  font-size: 28px;
+}
+/* HEADER IMAGE */
+.top .logo-div {
+  width: 70px;
+  height: 50px;
+}
+.logo-div img {
+  width: 100%;
+  object-fit: cover;
 }
