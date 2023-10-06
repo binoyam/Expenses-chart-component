@@ -1,15 +1,15 @@
 import React from "react";
 
-function Chart() {
+function Chart({ data }) {
   return (
     <div className="chart">
-      <div className="mon">mon</div>
-      <div className="tue">tue</div>
-      <div className="wed">wed</div>
-      <div className="thu">thu</div>
-      <div className="fri">fri</div>
-      <div className="sat">sat</div>
-      <div className="sun">sun</div>
+      {data.map((data, index) => (
+        <div key={index} className="data">
+          <span className="amount">{data.amount}</span>
+          <span className="bar"></span>
+          <p className="day">{data.day}</p>
+        </div>
+      ))}
     </div>
   );
 }

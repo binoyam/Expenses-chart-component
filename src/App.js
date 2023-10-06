@@ -10,7 +10,7 @@ function App() {
     <main className="app">
       <div className="hero">
         <Header />
-        <Expense />
+        <Expense data={data} />
       </div>
     </main>
   );
