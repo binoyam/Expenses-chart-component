@@ -5,8 +5,9 @@ function Chart({ data }) {
     <div className="chart">
       {data.map((data, index) => (
         <div key={index} className="data">
-          <span className="amount">{data.amount}</span>
-          <span className="bar"></span>
+            <span className="amount">$ {data.amount}</span>
+          <div className="bar">
+          </div>
           <p className="day">{data.day}</p>
         </div>
       ))}

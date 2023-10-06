@@ -94,9 +94,37 @@ img {
 }
 .chart{
     width: 100%;
+    height: 200px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
+  }
+  /* CHART BAR */
+  .data{
+  position: relative;
+  width: 14%;
+  text-align: center;
+}
+.data .day{
+  color: var(--Mediumbrown);
+}
+.data .bar{
+  margin: 0 auto;
+  width: 80%;
+  height: 100px;
+  background-color: var(--Cyan);
+}
+.data .amount{
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  font-size: 14px;
+  color: var(--Verypaleorange);
+  background-color: var(--Darkbrown);
+  border-radius: 5px;
+
 }
 /* FOOTER / TOTAL */
 .footer p.this{
@@ -108,6 +136,7 @@ img {
     justify-content: space-between;
 }
 .total-div h1{
+  color: var(--Darkbrown);
     font-size: 43px;
     font-weight: 700;
 }
