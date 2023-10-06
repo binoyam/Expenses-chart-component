@@ -1,8 +1,9 @@
 import React from "react";
 import "./index.css";
-import Data from "./components/data.json";
+import Data from "./data.json";
 import Header from "./components/Header";
 import Expense from "./components/Expense";
+
 function App() {
   const data = Data;
 
