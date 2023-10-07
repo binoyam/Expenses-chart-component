@@ -5,8 +5,16 @@
   height: auto;
   text-align: center;
 }
+/* HOVER TO DISPLAY AMOUNT / NOT WORKING??!!*/
+
+.data:hover + .data .bar .amount{ 
+  visibility: visible;
+}
+.data:hover + .data .bar.max .amount{ 
+  visibility: visible;
+}
 /* AMOUNT */
-.data .amount {
+.amount {
   position: absolute;
   width: 90%;
   top: 0;
@@ -17,6 +25,7 @@
   font-size: 15px;
   border-radius: 5px;
   background-color: var(--Darkbrown);
+  visibility: hidden;
 }
 /* CHART BAR */
 .data .bar {
@@ -41,8 +50,4 @@
 .data .day {
   margin-top: 7px;
   color: var(--Mediumbrown);
-}
-/* HOVER TO DISPLAY AMOUNT */
-.data .bar:hover + .data .amount {
-  visibility: visible;
 }

@@ -1,9 +1,9 @@
 import React from "react";
-import './bar.css'
+import "./bar.css";
 
 function Bar({ d, data }) {
-//   console.log(data);
-//   console.log(d);
+  //   console.log(data);
+  //   console.log(d);
 
   const barStyle = {
     height: `${d.amount * 3}px`,
@@ -24,14 +24,16 @@ function Bar({ d, data }) {
 
   return (
     <div className="data">
-      <div className="amount">$ {d.amount}</div>
       <div
         className={d.amount === maxAmount ? "bar max" : "bar"}
         style={barStyle}
-      ></div>
+      >
+      <span className="amount">$ {d.amount}</span>
+
+      </div>
+
       <p className="day">{d.day}</p>
     </div>
   );
 }
-
 export default Bar;
