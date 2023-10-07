@@ -5,14 +5,7 @@
   height: auto;
   text-align: center;
 }
-/* HOVER TO DISPLAY AMOUNT / NOT WORKING??!!*/
 
-.data:hover + .data .bar .amount{ 
-  visibility: visible;
-}
-.data:hover + .data .bar.max .amount{ 
-  visibility: visible;
-}
 /* AMOUNT */
 .amount {
   position: absolute;
@@ -25,7 +18,7 @@
   font-size: 15px;
   border-radius: 5px;
   background-color: var(--Darkbrown);
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 /* CHART BAR */
 .data .bar {
@@ -50,4 +43,28 @@
 .data .day {
   margin-top: 7px;
   color: var(--Mediumbrown);
+}
+@media only screen and (max-width: 590px) {
+  .data {
+    width: 12%;
+  }
+  .data .bar {
+    width: 100%;
+  }
+  .data .amount {
+    width: 94%;
+    padding: 5px 2px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .data .amount {
+    width: 120%;
+    font-size: 13px;
+    padding: 5px 1px;
+  }
+}
+@media only screen and (max-width:400px){
+  .data .amount{
+    width: 130%;
+  }
 }

@@ -48,7 +48,7 @@ img {
   background-color: var(--Cream);
   margin: 2rem 0;
 }
- /* RESPONSIVE STYLING */
+/* RESPONSIVE STYLING */
 @media only screen and (max-width: 1330px) {
   .hero {
     width: 45%;
@@ -91,42 +91,15 @@ img {
   .hero {
     width: 95%;
   }
-  .top {
-    padding: 1rem;
-  }
-  .expense {
-    padding: 1rem 1rem 1.5rem;
-  }
-  .data {
-    width: 12%;
-  }
-  .data .bar {
-    width: 100%;
-  }
-  .data .amount {
-    width: 94%;
-    padding: 5px 2px;
-  }
 }
 @media only screen and (max-width: 520px) {
   body {
     font-size: 14px;
   }
-  .app{
+  .app {
     align-items: flex-start;
   }
-  .hero{
+  .hero {
     margin-top: 4rem;
-  }
-  .data .amount {
-    width: 120%;
-    font-size: 13px;
-    padding: 5px 1px;
-  }
-  .total-div h1.total {
-    font-size: 30px;
-  }
-  .border {
-    margin: 1.4rem 0;
   }
 }

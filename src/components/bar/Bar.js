@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./bar.css";
 
 function Bar({ d, data }) {
   //   console.log(data);
   //   console.log(d);
+  const [isHovered, setIsHovered] = useState(false);
 
   const barStyle = {
     height: `${d.amount * 3}px`,
@@ -22,14 +23,21 @@ function Bar({ d, data }) {
 
   const maxAmount = findMaxAmount();
 
+  function handleMouseEnter() {
+    setIsHovered(true);
+  }
+  function handleMouseLeave() {
+    setIsHovered(false);
+  }
   return (
     <div className="data">
       <div
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
         className={d.amount === maxAmount ? "bar max" : "bar"}
         style={barStyle}
       >
-      <span className="amount">$ {d.amount}</span>
-
+        {isHovered && <span className="amount">$ {d.amount}</span>}
       </div>
 
       <p className="day">{d.day}</p>

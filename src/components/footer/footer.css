@@ -25,3 +25,8 @@
   font-weight: 700;
   color: var(--Darkbrown);
 }
+@media only screen and (max-width: 520px) {
+  .total-div h1.total {
+    font-size: 30px;
+  }
+}
