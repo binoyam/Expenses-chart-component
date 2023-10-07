@@ -2,7 +2,7 @@
 
 :root {
   --Softred: hsl(10, 79%, 65%);
-  --Softerred: rgb(236, 119, 95,0.5);
+  --Softerred: rgb(236, 119, 95, 0.5);
   --Cyan: hsl(186, 34%, 60%);
   --LightCyan: rgb(118, 181, 188, 0.5);
   --Darkbrown: hsl(25, 47%, 15%);
@@ -110,6 +110,7 @@ img {
   margin-top: 7px;
   color: var(--Mediumbrown);
 }
+
 /* CHART BAR */
 .data .bar {
   margin: 0 auto;
@@ -118,21 +119,12 @@ img {
   border-radius: 7px;
   cursor: pointer;
 }
-.data .bar:hover{
-  background-color: var(--Softerred);
-}
-/* CHART BAR + MAX AMOUNT */
-.data .bar.max{
-  background-color: var(--Cyan);
-}
-.data .bar.max:hover{
-  background-color: var(--LightCyan);
-}
+
 /* AMOUNT */
 .data .amount {
   position: absolute;
   width: 90%;
-  top: -30px;
+  top: -33px;
   left: 50%;
   transform: translateX(-50%);
   padding: 5px;
@@ -140,7 +132,26 @@ img {
   font-size: 15px;
   border-radius: 5px;
   background-color: var(--Darkbrown);
+  /* opacity: 0; */
 }
+
+/* HOVER TO CHANGE BGCOLOR */
+.data .bar:hover {
+  background-color: var(--Softerred);
+}
+/* CHART BAR + MAX AMOUNT */
+.data .bar.max {
+  background-color: var(--Cyan);
+}
+.data .bar.max:hover {
+  background-color: var(--LightCyan);
+}
+
+/* HOVER TO DISPLAY AMOUNT */
+/* .data .bar:hover + .data .amount{
+  opacity: 1;
+} */
+
 /* LINE DIVIDER */
 .border {
   width: 100%;

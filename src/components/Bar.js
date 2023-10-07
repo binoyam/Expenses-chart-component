@@ -1,7 +1,8 @@
 import React from "react";
 
 function Bar({ d, data }) {
-  console.log(data);
+//   console.log(data);
+//   console.log(d);
 
   const barStyle = {
     height: `${d.amount * 3}px`,
@@ -14,7 +15,7 @@ function Bar({ d, data }) {
         maxAmount = d.amount;
       }
     });
-    console.log(maxAmount);
+    // console.log(maxAmount);
     return maxAmount;
   };
 
@@ -22,7 +23,7 @@ function Bar({ d, data }) {
 
   return (
     <div className="data">
-      <span className="amount">$ {d.amount}</span>
+      <div className="amount">$ {d.amount}</div>
       <div
         className={d.amount === maxAmount ? "bar max" : "bar"}
         style={barStyle}
