@@ -48,7 +48,7 @@ img {
   background-color: var(--Cream);
   margin: 2rem 0;
 }
-/* RESPONSIVE STYLING */
+ /* RESPONSIVE STYLING */
 @media only screen and (max-width: 1330px) {
   .hero {
     width: 45%;
@@ -112,10 +112,10 @@ img {
   body {
     font-size: 14px;
   }
-  .app {
+  .app{
     align-items: flex-start;
   }
-  .hero {
+  .hero{
     margin-top: 4rem;
   }
   .data .amount {

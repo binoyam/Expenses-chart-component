@@ -1,4 +1,5 @@
 import React from "react";
+import './bar.css'
 
 function Bar({ d, data }) {
 //   console.log(data);
