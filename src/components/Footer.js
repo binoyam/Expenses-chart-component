@@ -7,7 +7,7 @@ function Footer({ data }) {
     data.forEach((data) => {
       sum += data.amount;
     });
-    return sum;
+    return sum.toFixed(2);
   };
 
   const total = totalAmount();
@@ -19,7 +19,7 @@ function Footer({ data }) {
       <div className="total-div">
 
         <h1 className="total">${total}</h1>
-        
+
         <div className="note">
           <p className="status">+2.4%</p>
           <p className="txt">from last month</p>
