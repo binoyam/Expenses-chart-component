@@ -1,6 +1,7 @@
 import React from "react";
-import Chart from "./Chart";
-import Footer from "./Footer";
+import './expense.css'
+import Chart from "../chart/Chart";
+import Footer from "../footer/Footer";
 
 function Expense({ data }) {
   

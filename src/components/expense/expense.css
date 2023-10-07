@@ -1,0 +1,15 @@
+/* CHART SECTION */
+.expense {
+  width: 100%;
+  background-color: var(--Verypaleorange);
+  border-radius: 15px;
+  padding: 1rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+}
+.expense h1.spending {
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,27 @@
+/* FOOTER */
+.footer p.txt {
+  color: var(--Mediumbrown);
+}
+/* FOOTER LEFT */
+.footer .total-div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.total-div h1.total {
+  color: var(--Darkbrown);
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 1;
+}
+/* FOOTER RIGHT */
+.total-div .note {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.note .status {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--Darkbrown);
+}

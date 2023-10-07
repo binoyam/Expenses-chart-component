@@ -1,0 +1,51 @@
+/* CHART BAR */
+.data {
+  position: relative;
+  width: 14%;
+  height: auto;
+  text-align: center;
+}
+/* DAY */
+.data .day {
+  margin-top: 7px;
+  color: var(--Mediumbrown);
+}
+/* HOVER TO DISPLAY AMOUNT */
+.data .bar:hover > .data .amount {
+  visibility: visible;
+}
+/* CHART BAR */
+.data .bar {
+  margin: 2rem auto 0;
+  width: 80%;
+  background-color: var(--Softred);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+/* AMOUNT */
+.data .amount {
+  position: absolute;
+  width: 90%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  color: var(--Verypaleorange);
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: var(--Darkbrown);
+  visibility: hidden;
+}
+
+/* HOVER TO CHANGE BGCOLOR */
+.data .bar:hover {
+  background-color: var(--Softerred);
+}
+/* CHART BAR + MAX AMOUNT */
+.data .bar.max {
+  background-color: var(--Cyan);
+}
+.data .bar.max:hover {
+  background-color: var(--LightCyan);
+}
