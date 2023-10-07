@@ -2,7 +2,9 @@
 
 :root {
   --Softred: hsl(10, 79%, 65%);
+  --Softerred: rgb(236, 119, 95,0.5);
   --Cyan: hsl(186, 34%, 60%);
+  --LightCyan: rgb(118, 181, 188, 0.5);
   --Darkbrown: hsl(25, 47%, 15%);
   --Mediumbrown: hsl(28, 10%, 53%);
   --Cream: hsl(27, 66%, 92%);
@@ -112,8 +114,19 @@ img {
 .data .bar {
   margin: 0 auto;
   width: 80%;
-  background-color: var(--Cyan);
+  background-color: var(--Softred);
   border-radius: 7px;
+  cursor: pointer;
+}
+.data .bar:hover{
+  background-color: var(--Softerred);
+}
+/* CHART BAR + MAX AMOUNT */
+.data .bar.max{
+  background-color: var(--Cyan);
+}
+.data .bar.max:hover{
+  background-color: var(--LightCyan);
 }
 /* AMOUNT */
 .data .amount {

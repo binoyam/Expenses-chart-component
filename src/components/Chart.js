@@ -1,14 +1,11 @@
 import React from "react";
+import Bar from "./Bar";
 
 function Chart({ data }) {
   return (
     <div className="chart">
-      {data.map((data, index) => (
-        <div key={index} className="data">
-          <span className="amount">$ {data.amount}</span>
-          <div className="bar" style={{ height: `${data.amount * 3}px` }}></div>
-          <p className="day">{data.day}</p>
-        </div>
+      {data.map((d, index) => (
+        <Bar d={d} data={data} key={index} />
       ))}
     </div>
   );
